@@ -1,0 +1,54 @@
+# Proje 1
+
+## Insertion Sort Aşamaları
+
+Verilen dizi: [22, 27, 16, 2, 18, 6]
+
+1. İlk iki eleman kıyaslanır ve yer değiştirilir (eğer gerekiyorsa):
+   - [22, 27, 16, 2, 18, 6] (İlk iki eleman zaten sıralı, değişiklik yok)
+
+2. Üçüncü eleman kıyaslanır ve doğru yerine yerleştirilir:
+   - [22, 27, 16, 2, 18, 6] -> [22, 16, 27, 2, 18, 6] -> [16, 22, 27, 2, 18, 6]
+
+3. Dördüncü eleman kıyaslanır ve doğru yerine yerleştirilir:
+   - [16, 22, 27, 2, 18, 6] -> [16, 22, 2, 27, 18, 6] -> [16, 2, 22, 27, 18, 6] -> [2, 16, 22, 27, 18, 6]
+
+4. Beşinci eleman kıyaslanır ve doğru yerine yerleştirilir:
+   - [2, 16, 22, 27, 18, 6] -> [2, 16, 22, 18, 27, 6] -> [2, 16, 18, 22, 27, 6]
+
+5. Altıncı eleman kıyaslanır ve doğru yerine yerleştirilir:
+   - [2, 16, 18, 22, 27, 6] -> [2, 16, 18, 22, 6, 27] -> [2, 16, 18, 6, 22, 27] -> [2, 16, 6, 18, 22, 27] -> [2, 6, 16, 18, 22, 27]
+
+Sonuç olarak sıralı dizi: [2, 6, 16, 18, 22, 27]
+
+### Big-O Gösterimi
+
+Insertion Sort algoritmasının Big-O notasyonu:
+- **En kötü durum (Worst Case):** \(O(n^2)\)
+- **En iyi durum (Best Case):** \(O(n)\)
+- **Ortalama durum (Average Case):** \(O(n^2)\)
+
+### 18 Sayısının Zaman Karmaşıklığı Kapsamı
+
+Sıralı dizide 18 sayısının yeri: [2, 6, 16, 18, 22, 27]
+- 18 sayısı dizinin ortasında yer aldığı için **Average case** kapsamına girer.
+
+---
+
+## Selection Sort İlk 4 Adımı
+
+Verilen dizi: [7, 3, 5, 8, 2, 9, 4, 15, 6]
+
+1. İlk adımda en küçük eleman bulunur ve ilk elemanla yer değiştirilir:
+   - [7, 3, 5, 8, 2, 9, 4, 15, 6] -> [2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+2. İkinci adımda kalan dizideki en küçük eleman bulunur ve ikinci elemanla yer değiştirilir:
+   - [2, 3, 5, 8, 7, 9, 4, 15, 6] (Değişiklik yok)
+
+3. Üçüncü adımda kalan dizideki en küçük eleman bulunur ve üçüncü elemanla yer değiştirilir:
+   - [2, 3, 5, 8, 7, 9, 4, 15, 6] -> [2, 3, 4, 8, 7, 9, 5, 15, 6]
+
+4. Dördüncü adımda kalan dizideki en küçük eleman bulunur ve dördüncü elemanla yer değiştirilir:
+   - [2, 3, 4, 8, 7, 9, 5, 15, 6] -> [2, 3, 4, 5, 7, 9, 8, 15, 6]
+
+Sonuç olarak dizi: [2, 3, 4, 5, 7, 9, 8, 15, 6]
