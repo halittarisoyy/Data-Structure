@@ -1,0 +1,35 @@
+# Proje 2
+
+## Merge Sort Aşamaları
+
+Verilen dizi: [16, 21, 11, 8, 12, 22]
+
+### 1. Adım: Diziyi Parçalama
+
+1. [16, 21, 11, 8, 12, 22]
+2. [16, 21, 11] ve [8, 12, 22]
+3. [16] [21, 11] ve [8] [12, 22]
+4. [16] [21] [11] ve [8] [12] [22]
+
+### 2. Adım: Alt Dizileri Birleştirme
+
+1. [21] ve [11] -> [11, 21]
+2. [12] ve [22] -> [12, 22]
+
+### 3. Adım: Alt Dizileri Sıralı Birleştirme
+
+1. [16] ve [11, 21] -> [11, 16, 21]
+2. [8] ve [12, 22] -> [8, 12, 22]
+
+### 4. Adım: Son Birleştirme
+
+1. [11, 16, 21] ve [8, 12, 22] -> [8, 11, 12, 16, 21, 22]
+
+Sonuç olarak sıralı dizi: [8, 11, 12, 16, 21, 22]
+
+## Big-O Gösterimi
+
+Merge Sort algoritmasının Big-O notasyonu:
+- **En kötü durum (Worst Case):** \(O(n \log n)\)
+- **En iyi durum (Best Case):** \(O(n \log n)\)
+- **Ortalama durum (Average Case):** \(O(n \log n)\)
